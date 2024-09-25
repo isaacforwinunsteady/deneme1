@@ -1,0 +1,74 @@
+/* Ürün kartı stili */
+.product-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Varyasyon listesi */
+.variation-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.variation-item:hover {
+    background-color: #f1f1f1;
+}
+
+/* Varyasyon adı stili */
+.variation-name {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Varyasyon fiyat ve miktar */
+.variation-details {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Modern buton stili */
+.product-buttons button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    font-size: 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.product-buttons button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+/* Sayı göstergesi (Miktar) */
+.quantity-label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #555;
+    margin: 0 15px;
+}
+
+/* Butonları hizalama */
+.product-buttons {
+    display: flex;
+    align-items: center;
+}

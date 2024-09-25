@@ -1,0 +1,113 @@
+/* Genel Stil */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 80px 0 20px 0; /* Navigasyon için üstte yer açtık */
+}
+
+/* Navbar Stili */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center; /* Menüleri ve logoyu ortalıyoruz */
+  align-items: center;
+  background-color: white;
+  padding: 20px;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-bottom: 2px solid black; /* Altında siyah bir çizgi */
+}
+
+/* Logo Stili */
+.navbar .logo {
+  display: flex;
+  align-items: center;
+  margin-right: 30px; /* Logo ile menü öğeleri arasına boşluk bırak */
+}
+
+.navbar .logo img {
+  width: 50px;
+  height: auto;
+}
+
+/* Menü Öğeleri */
+.navbar div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar a {
+  color: #333;
+  text-decoration: none;
+  font-size: 18px;
+  margin: 0 10px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar a.active {
+  background-color: #28a745;
+  color: white;
+}
+
+.navbar a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Ürün Listesi */
+.product-list-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.product-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.product-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-buttons button {
+  background-color: #61dafb;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.product-buttons button:hover {
+  background-color: #21a1f1;
+}
+
+.quantity-label {
+  font-size: 1.1rem;
+  margin: 0 10px;
+}
